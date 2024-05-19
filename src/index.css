@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* font-family: Helvetica, Arial, sans-serif; */
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.divider-container {
+  height: 100vh; /* Full height */
+  width: 120px;
+  padding: 6px;
+  background-color: #ae8ce2; /* Same as bg-purple-400 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Style for large screens */
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  color: black;
+  font-size: 24px;
+  writing-mode: vertical-rl; /* This makes the text vertical */
+  animation: scroll-vertical 5s linear infinite;
+}
+
+@keyframes scroll-vertical {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Style for small and medium screens */
+@media (max-width: 1000px) {
+  .divider-container {
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .scroll-text {
+    writing-mode: horizontal-tb; /* Normal horizontal text */
+    font-size: 16px; /* Adjust font size for smaller screens */
+    animation: scroll-horizontal 5s linear infinite;
+  }
+
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+
+/* Other existing styles */
+
+.slideshow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 450px; /* Adjusted to match image height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideshow-track {
+  display: flex;
+  width: calc(150px * 6); /* Adjust width to accommodate all images */
+  animation: scroll 10s linear infinite; /* Slower animation for smoother scrolling */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 3)); /* Adjust for half the images */
+  }
+}
+
+.slideshow-image {
+  width: 320px;
+  height: 450px;
+  margin-right: 16px;
+  object-fit: cover;
+}
+
+
