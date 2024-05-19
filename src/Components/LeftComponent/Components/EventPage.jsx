@@ -15,8 +15,8 @@ const EventPage = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen h-full bg-gray-900 text-white justify-center">
-      <div className="lg:w-[55%] w-full p-8 pr-0">
+    <div className="flex flex-col lg:flex-row min-h-screen h-[90%] bg-gray-900 text-white justify-center">
+      <div className="lg:w-[55%] w-full p-6 pr-0">
         <h1 className="text-4xl font-bold mb-8">Astrix.</h1>
         <div className="slideshow">
           <div className="slideshow-track">
