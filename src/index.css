@@ -14,8 +14,8 @@ body {
 }
 
 .divider-container {
-  height: 100%; /* Full height */
-  width: 110px;
+  height: 100vh;
+  width: 100px;
   padding: 6px;
   background-color: #ae8ce2; /* Same as bg-purple-400 */
   display: flex;

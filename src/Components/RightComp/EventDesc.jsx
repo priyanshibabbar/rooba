@@ -23,7 +23,7 @@ const EventDesc = () => {
         </p>
         <h4 className="text-xl font-semibold mt-6">Artist Lineup</h4>
         <div className="">
-          <div className="flex gap-2 mt-4 ">
+          <div className="mt-4 flex flex-col lg:flex-row gap-2 overflow-hidden">
             <img
               height="120px"
               width="120px"
@@ -32,14 +32,14 @@ const EventDesc = () => {
               className="rounded-md"
             />
             <img
-             height="120px"
+              height="120px"
               width="120px"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz51O0fEOkhhLe6NLSM1DwxtECqrOyVdP3LnnhfzFbFUJLahtOWpSptaCwwE2quu9rG08&usqp=CAU"
               alt="Artist 2"
               className="rounded-md"
             />
             <img
-             height="120px"
+              height="120px"
               width="120px"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0oPZ1hpIBlW1Hy3hF_vdb45pblLLHb1fvOEFzeIYj_YQo562qevFArdD4D5ChEWG40BU&usqp=CAU"
               alt="QR Code"

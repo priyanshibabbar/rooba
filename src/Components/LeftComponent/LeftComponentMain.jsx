@@ -3,7 +3,7 @@ import EventPage from './Components/EventPage'
 
 const LeftComponentMain = () => {
   return (
-    <div className='h-full w-full'>
+    <div className='h-full w-full overflow-hidden'>
         <EventPage />
     </div>
   )

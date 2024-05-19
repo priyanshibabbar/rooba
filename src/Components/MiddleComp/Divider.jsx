@@ -6,7 +6,6 @@ const Divider = () => {
     <div className='divider-container'>
       <div className='scroll-text'>
         Event : Oasis Bus Tour, JLN Stadium, Delhi <span className=''> <StreamOutlinedIcon fontSize='large'/>  </span>
-        Collection Live : Meta Live
       </div>
     </div>
   );
